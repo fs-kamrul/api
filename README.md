@@ -24,7 +24,7 @@ php artisan route:list
 --postman Environment
 #### Get Tocken
 ```C++
-http://localhost:8000/oauth/token
+POST URL http://localhost:8000/oauth/token
 
 Headers
     Accept:application/json
@@ -42,7 +42,7 @@ Body
 
 #### OAuth
 ```C++
-http://localhost:8000/api/user
+GET URL http://localhost:8000/api/user
 Headers
     Accept:application/json
     Content-Type:application/json
@@ -51,7 +51,7 @@ Headers
 
 #### Product List
 ```C++
-http://localhost:8000/api/user
+GET URL http://localhost:8000/api/user
 Headers
     Accept:application/json
     Content-Type:application/json
@@ -59,7 +59,7 @@ Headers
 
 #### Product Create
 ```C++
-http://localhost:8000/api/user
+POST URL http://localhost:8000/api/user
 Headers
     Accept:application/json
     Content-Type:application/json
@@ -67,7 +67,7 @@ Headers
     
 Body
 {
-	"name": "I phon 8",
+    "name": "I phon 8",
     "description": "The Best Porro incidunt blanditiis eius est doloribus explicabo. Omnis ratione repellat minus ducimus cumque. Ipsa inventore nemo accusamus accusantium ex ut. Libero deleniti natus occaecati.",
     "price": "100",
     "stock": "10",
