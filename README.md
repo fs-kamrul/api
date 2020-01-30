@@ -21,6 +21,7 @@ php artisan route:list
 ```
 
 ## Postman
+--postman Environment
 #### Get Tocken
 ```C++
 http://localhost:8000/oauth/token
@@ -29,7 +30,7 @@ Headers
     Accept:application/json
     Content-Type:application/json
 
-body
+Body
 {
 	"grant_type" : "password",
 	"client_id" : "2",
@@ -52,8 +53,26 @@ Headers
 ```C++
 http://localhost:8000/api/user
 Headers
-    A:application/json
+    Accept:application/json
     Content-Type:application/json
+```
+
+#### Product Create
+```C++
+http://localhost:8000/api/user
+Headers
+    Accept:application/json
+    Content-Type:application/json
+    Authorization:{{auth}}
+    
+Body
+{
+	"name": "I phon 8",
+    "description": "The Best Porro incidunt blanditiis eius est doloribus explicabo. Omnis ratione repellat minus ducimus cumque. Ipsa inventore nemo accusamus accusantium ex ut. Libero deleniti natus occaecati.",
+    "price": "100",
+    "stock": "10",
+    "discount": "50"
+}
 ```
 
 ## About Laravel
